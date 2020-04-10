@@ -15,7 +15,11 @@
       possiblePrime
       (findLargestPrime (- possiblePrime 2)))))
 
-(defn largestPrimeFactor [input]
+(defn largestPrimeFactor
+  "Computes the largest prime factor below a given number.
+  Note that this solution is not performant enough.
+  This is the solution to: https://projecteuler.net/problem=3"
+  [input]
   (println "Computing the largest primefactor for:" input)
   (println "Value is:" (findLargestPrime (dec input)))
   (println))
