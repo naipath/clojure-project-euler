@@ -1,10 +1,14 @@
 (ns clojure-ui-playground.evenFibonacci)
 
 (def fibonacciSequence
-  (map first (iterate (fn [[a b]] [b (+ a b)]) [0 1])))
+  (->> [0 1]
+       (iterate (fn [[a b]] [b (+ a b)]))
+       (map first)))
 
 (defn evenValuesForMaximum [maxValue]
-  (take-while #(< % maxValue) (filter even? fibonacciSequence)))
+  (->> fibonacciSequence
+       (filter even?)
+       (take-while #(< % maxValue))))
 
 (defn evenFibonacci
   "Computes the even numbers in a fibonacci sequence with an upper bound.
