@@ -7,5 +7,6 @@
   (take-while #(< % maxValue) (filter even? fibonacciSequence)))
 
 (defn evenFibonacci [maxValue]
-  (println (str "Computing even fibonacci sum for: " maxValue))
-  (println (str "Value is: " (reduce + (evenValuesForMaximum maxValue)))))
+  (println "Computing even fibonacci sum for:" maxValue)
+  (println "Value is:" (reduce + (evenValuesForMaximum maxValue)))
+  (println))
