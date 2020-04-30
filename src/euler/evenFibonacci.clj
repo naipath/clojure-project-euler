@@ -1,4 +1,4 @@
-(ns clojure-ui-playground.evenFibonacci)
+(ns euler.evenFibonacci)
 
 (def fibonacciSequence
   (->> [0 1]

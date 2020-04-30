@@ -1,4 +1,4 @@
-(ns clojure-ui-playground.largestPrimeFactor)
+(ns euler.largestPrimeFactor)
 
 (defn isPrime
   ([input] (isPrime input 3))

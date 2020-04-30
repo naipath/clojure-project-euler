@@ -1,4 +1,4 @@
-(ns clojure-ui-playground.multiplesOf3And5)
+(ns euler.multiplesOf3And5)
 
 (defn multiplesOfFactor [input factor]
   (map #(* (+ 1 %) factor) (range (quot (- input 1) factor))))
