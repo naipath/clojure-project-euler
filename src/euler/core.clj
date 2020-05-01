@@ -3,6 +3,7 @@
   (:require [euler.evenFibonacci :refer [evenFibonacci]])
   (:require [euler.largestPrimeFactor :refer [largestPrimeFactor]])
   (:require [euler.palindrome :refer [palindrome]])
+  (:require [euler.smalestMultiple :refer [smalestMultiple]])
   (:gen-class))
 
 (defn -main [& args]
@@ -10,4 +11,5 @@
   (evenFibonacci 4000000)
   (largestPrimeFactor 600851475143)
   (palindrome 1000)
+  (smalestMultiple)
   )
