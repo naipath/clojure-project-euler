@@ -4,7 +4,7 @@
 (def dividers (range 2 20))
 
 ; 19 is the highest prime in the sequence, so the number must be a coming from the table of 19
-(def tableOf19 (range 19 2000000000 19))
+(def tableOf19 (range 38 2000000000 38))
 
 (defn evenlyDivisable
   [input]
