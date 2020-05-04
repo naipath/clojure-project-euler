@@ -1,4 +1,4 @@
-(ns euler.smalestMultiple)
+(ns euler.smallestMultiple)
 
 ; 1 is always divisable (saves 5% calculation time)
 (def dividers (range 2 20))
@@ -14,8 +14,8 @@
        (first)
        (nil?)))
 
-(defn smalestMultiple
-  "Computes the smalest number that can be evenly divided by 1 to 20.
+(defn smallestMultiple
+  "Computes the smallest number that can be evenly divided by 1 to 20.
   This is the solution to: https://projecteuler.net/problem=5"
   []
   (println "Largest number evenly divisible by 1 to 20 is:"
