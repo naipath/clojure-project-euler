@@ -4,6 +4,7 @@
   (:require [euler.largestPrimeFactor :refer [largestPrimeFactor]])
   (:require [euler.palindrome :refer [palindrome]])
   (:require [euler.smallestMultiple :refer [smallestMultiple]])
+  (:require [euler.sumSquareDifference :refer [sumSquareDifference]])
   (:gen-class))
 
 (defn -main [& args]
@@ -12,4 +13,5 @@
   (largestPrimeFactor 600851475143)
   (palindrome 1000)
   (smallestMultiple)
+  (sumSquareDifference 100)
   )
